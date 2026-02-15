@@ -116,19 +116,19 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "django", specifier = "==5.2.11" },
-    { name = "django-environ", specifier = ">=0.12.1" },
-    { name = "psycopg2", specifier = ">=2.9.11" },
+    { name = "django-environ", specifier = "==0.12.1" },
+    { name = "psycopg2", specifier = "==2.9.11" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "django-debug-toolbar", specifier = ">=6.2.0" },
-    { name = "django-stubs", specifier = ">=5.2.9" },
-    { name = "djangorestframework-stubs", specifier = ">=3.16.8" },
-    { name = "ipdb", specifier = ">=0.13.13" },
-    { name = "ipython", specifier = ">=9.10.0" },
-    { name = "pre-commit", specifier = ">=4.5.1" },
-    { name = "ruff", specifier = ">=0.15.1" },
+    { name = "django-debug-toolbar", specifier = "==6.2.0" },
+    { name = "django-stubs", specifier = "==5.2.9" },
+    { name = "djangorestframework-stubs", specifier = "==3.16.8" },
+    { name = "ipdb", specifier = "==0.13.13" },
+    { name = "ipython", specifier = "==9.10.0" },
+    { name = "pre-commit", specifier = "==4.5.1" },
+    { name = "ruff", specifier = "==0.15.1" },
 ]
 
 [[package]]
