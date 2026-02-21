@@ -23,7 +23,10 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 DJANGO_RUNSERVER_HIDE_WARNING = True
 
-LOCAL_APPS = ["djpgv.core.apps.CoreConfig"]
+LOCAL_APPS = [
+    "djpgv.core.apps.CoreConfig",
+    "djpgv.users.apps.UsersConfig",
+]
 
 THIRD_PARTY_APPS = []
 
@@ -111,3 +114,4 @@ STATIC_URL = "static/"
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = "users.User"
