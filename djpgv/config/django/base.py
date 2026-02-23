@@ -26,6 +26,7 @@ DJANGO_RUNSERVER_HIDE_WARNING = True
 LOCAL_APPS = [
     "djpgv.core.apps.CoreConfig",
     "djpgv.users.apps.UsersConfig",
+    "djpgv.rag.apps.RagConfig",
 ]
 
 THIRD_PARTY_APPS = []
