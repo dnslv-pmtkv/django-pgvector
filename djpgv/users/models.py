@@ -38,6 +38,10 @@ class UserManager(BUM):
 
 
 class User(BaseModel, AbstractBaseUser, PermissionsMixin):
+    first_name = models.CharField(max_length=32, null=True, blank=True)
+    last_name = models.CharField(max_length=32, null=True, blank=True)
+    age = models.PositiveIntegerField(null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
     email = models.EmailField(verbose_name="email address", max_length=255, unique=True)
     is_superuser = models.BooleanField(default=False)
 
